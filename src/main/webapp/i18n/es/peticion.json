@@ -1,0 +1,30 @@
+{
+  "jhipsterTestApp": {
+    "peticion": {
+      "home": {
+        "title": "Peticions",
+        "createLabel": "Crear nuevo Peticion",
+        "createOrEditLabel": "Crear o editar Peticion",
+        "search": "Search for Peticion",
+        "notFound": "No Peticions found"
+      },
+      "created": "Un nuevo Peticion ha sido creado con el identificador {{ param }}",
+      "updated": "Un Peticion ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Peticion ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Peticion {{ id }}?"
+      },
+      "detail": {
+        "title": "Peticion"
+      },
+      "codigo": "Codigo",
+      "tipo": "Tipo",
+      "asunto": "Asunto",
+      "descripcion": "Descripcion",
+      "estado": "Estado",
+      "propietario": "Propietario",
+      "costes": "Costes",
+      "tareas": "Tareas"
+    }
+  }
+}

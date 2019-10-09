@@ -1,0 +1,27 @@
+{
+  "jhipsterTestApp": {
+    "costes": {
+      "home": {
+        "title": "Costes",
+        "createLabel": "Crear nuevo Costes",
+        "createOrEditLabel": "Crear o editar Costes",
+        "search": "Search for Costes",
+        "notFound": "No Costes found"
+      },
+      "created": "Un nuevo Costes ha sido creado con el identificador {{ param }}",
+      "updated": "Un Costes ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Costes ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Costes {{ id }}?"
+      },
+      "detail": {
+        "title": "Costes"
+      },
+      "proveedor": "Proveedor",
+      "servicio": "Servicio",
+      "estado": "Estado",
+      "coste": "Coste",
+      "peticion": "Peticion"
+    }
+  }
+}

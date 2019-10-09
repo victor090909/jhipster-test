@@ -1,0 +1,43 @@
+{
+    "name": "Tareas",
+    "fields": [
+        {
+            "fieldName": "responsable",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "titulo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "descripcion",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "estado",
+            "fieldType": "Estado",
+            "fieldValues": "NUEVA,ENCURSO,APROBADA,RECHAZADA,CERRADA"
+        },
+        {
+            "fieldName": "fechafin",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "peticion",
+            "otherEntityName": "peticion",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191009102117",
+    "entityTableName": "tareas",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
