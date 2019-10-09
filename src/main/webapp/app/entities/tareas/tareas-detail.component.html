@@ -1,0 +1,49 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="tareas">
+            <h2><span jhiTranslate="jhipsterTestApp.tareas.detail.title">Tareas</span> {{tareas.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="jhipsterTestApp.tareas.responsable">Responsable</span></dt>
+                <dd>
+                    <span>{{tareas.responsable}}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterTestApp.tareas.titulo">Titulo</span></dt>
+                <dd>
+                    <span>{{tareas.titulo}}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterTestApp.tareas.descripcion">Descripcion</span></dt>
+                <dd>
+                    <span>{{tareas.descripcion}}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterTestApp.tareas.estado">Estado</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'jhipsterTestApp.Estado.' + tareas.estado}}">{{tareas.estado}}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterTestApp.tareas.fechafin">Fechafin</span></dt>
+                <dd>
+                    <span>{{tareas.fechafin}}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterTestApp.tareas.peticion">Peticion</span></dt>
+                <dd>
+                    <div *ngIf="tareas.peticion">
+                        <a [routerLink]="['/peticion', tareas.peticion?.id, 'view']">{{tareas.peticion?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/tareas', tareas.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
