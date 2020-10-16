@@ -1,0 +1,11 @@
+{
+  "jhipsterTestApp": {
+    "Tipo": {
+      "null": "",
+      "PROYECTO": "PROYECTO",
+      "EVOLUTIVO": "EVOLUTIVO",
+      "PROBLEMA": "PROBLEMA",
+      "OTRO": "OTRO"
+    }
+  }
+}

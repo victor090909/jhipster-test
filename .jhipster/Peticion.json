@@ -1,0 +1,56 @@
+{
+  "name": "Peticion",
+  "fields": [
+    {
+      "fieldName": "codigo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tipo",
+      "fieldType": "Tipo",
+      "fieldValues": "PROYECTO,EVOLUTIVO,PROBLEMA,OTRO"
+    },
+    {
+      "fieldName": "asunto",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "descripcion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estado",
+      "fieldType": "Estado",
+      "fieldValues": "NUEVA,ENCURSO,APROBADA,RECHAZADA,CERRADA"
+    },
+    {
+      "fieldName": "propietario",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "costes",
+      "otherEntityRelationshipName": "peticion",
+      "relationshipName": "costes"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "tareas",
+      "otherEntityRelationshipName": "peticion",
+      "relationshipName": "tareas"
+    }
+  ],
+  "changelogDate": "20201016142628",
+  "entityTableName": "peticion",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

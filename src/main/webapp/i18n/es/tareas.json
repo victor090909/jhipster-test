@@ -1,0 +1,28 @@
+{
+  "jhipsterTestApp": {
+    "tareas": {
+      "home": {
+        "title": "Tareas",
+        "createLabel": "Crear nuevo Tareas",
+        "createOrEditLabel": "Crear o editar Tareas",
+        "search": "Buscar Tareas",
+        "notFound": "Ningún Tareas encontrado"
+      },
+      "created": "Un nuevo Tareas ha sido creado con el identificador {{ param }}",
+      "updated": "Un Tareas ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Tareas ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Tareas {{ id }}?"
+      },
+      "detail": {
+        "title": "Tareas"
+      },
+      "responsable": "Responsable",
+      "titulo": "Titulo",
+      "descripcion": "Descripcion",
+      "estado": "Estado",
+      "fechafin": "Fechafin",
+      "peticion": "Peticion"
+    }
+  }
+}
