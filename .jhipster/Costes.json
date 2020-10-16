@@ -1,0 +1,42 @@
+{
+  "name": "Costes",
+  "fields": [
+    {
+      "fieldName": "proveedor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "servicio",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estado",
+      "fieldType": "Estado",
+      "fieldValues": "NUEVA,ENCURSO,APROBADA,RECHAZADA,CERRADA"
+    },
+    {
+      "fieldName": "coste",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "peticion",
+      "otherEntityRelationshipName": "costes",
+      "relationshipName": "peticion",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201016142728",
+  "entityTableName": "costes",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

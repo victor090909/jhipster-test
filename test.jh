@@ -1,0 +1,44 @@
+entity Peticion {
+	codigo String,
+    tipo Tipo,
+    asunto String,
+    descripcion String,
+    estado Estado,
+    propietario String
+}
+
+enum Tipo {
+    PROYECTO, EVOLUTIVO, PROBLEMA, OTRO
+}
+
+enum Estado {
+    NUEVA, ENCURSO, APROBADA, RECHAZADA, CERRADA
+}
+
+entity Costes {
+	proveedor String,
+    servicio String,
+    estado Estado,
+    coste Long
+}
+
+entity Tareas {
+	responsable String,
+    titulo String,
+    descripcion String,
+    estado Estado,
+    fechafin Instant
+}
+
+
+relationship OneToMany {
+	Peticion{costes} to Costes,
+	Peticion{tareas} to	Tareas
+}
+///////////////////////////////
+
+// Set pagination options
+paginate Tareas, Costes with infinite-scroll
+paginate Peticion with pagination
+
+
